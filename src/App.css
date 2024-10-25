@@ -7,7 +7,6 @@
 body {
     background-color: black;
     font-family: 'Roboto', sans-serif;
-    margin: 20px;
 }
 
 .container {
@@ -16,7 +15,43 @@ body {
 }
 /* TODO: Add css here */
 .tabs {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.tabs button {
+    background-color: #464545;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 250px;
+    height: 70px;
+}
 
+.tabs button:hover {
+    background-color: #52585e;
+}
+.tabs button.active {
+    background-color: #225f78;
+}
+
+.content {
+    background-color: #f5f2f2;
+    color: black;
+    padding: 80px 50px;
+    border: 1px solid #ccc;
+}
+
+.content h2 {
+    color: #000000;
+    padding-bottom: 30px;
+}
+
+.content p {
+    color: #302d2d;
 }
 
 
